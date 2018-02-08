@@ -1,7 +1,7 @@
 {
   "name": "agency_business",
   "version": "1.0.0",
-  "description": "Project agency_business",
+  "description": "Project blagoyart",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,21 +9,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Valeriy73/Agency_-Business.git"
+    "url": "git+https://github.com/Valeriy73/blagoyart.git"
   },
   "author": "Tur Valeriy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Valeriy73/Agency_-Business/issues"
+    "url": "https://github.com/Valeriy73/blagoyart/issues"
   },
-  "homepage": "https://github.com/Valeriy73/Agency_-Business#readme",
+  "homepage": "https://github.com/Valeriy73/blagoyart#readme",
   "devDependencies": {
     "browser-sync": "^2.23.3",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^4.1.0",
+    "gulp-concat": "^2.6.1",
     "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
     "gulp.spritesmith": "^6.8.0",
     "rimraf": "^2.6.2"
   },
