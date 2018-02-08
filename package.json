@@ -1,0 +1,34 @@
+{
+  "name": "agency_business",
+  "version": "1.0.0",
+  "description": "Project agency_business",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Valeriy73/Agency_-Business.git"
+  },
+  "author": "Tur Valeriy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Valeriy73/Agency_-Business/issues"
+  },
+  "homepage": "https://github.com/Valeriy73/Agency_-Business#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.3",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp.spritesmith": "^6.8.0",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "normalize.scss": "^0.1.0"
+  }
+}
