@@ -34,12 +34,12 @@ gulp.task('server', function() {
 // Styles compile
 gulp.task('styles:compile', function () {
   return gulp.src('source/scss/style.scss')
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(sass().on('error', sass.logError))
 	.pipe(autoprefixer({
 		browsers: ['last 2 versions'],
 		cascade: false
 	}))
-	.pipe(rename('style.min.css'))
+	.pipe(rename('style.css'))
     .pipe(gulp.dest('build/css'));
 });
 
@@ -50,7 +50,7 @@ gulp.task('js', function () {
   		'source/js/custom.js'
   	])
   .pipe(sourcemaps.init())
-	.pipe(concat('main.min.js'))
+	.pipe(concat('custom.js'))
 	.pipe(uglify())
 	.pipe(sourcemaps.write())
   .pipe(gulp.dest('build/js'));
@@ -91,8 +91,13 @@ gulp.task('copy:index', function() {
 		.pipe(gulp.dest('build'));
 });
 
+gulp.task('copy:js', function() {
+	return gulp.src(['./source/js/jquery-3.0.0.min.js', './source/js/jquery-migrate-1.4.1.min.js'])
+		.pipe(gulp.dest('build/js'));
+});
+
 // Copy
-gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images', 'copy:index'));
+gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images', 'copy:index', 'copy:js'));
 
 //Watchers
 gulp.task('watch', function() {
