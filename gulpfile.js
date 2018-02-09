@@ -94,10 +94,17 @@ gulp.task('copy:index', function() {
 gulp.task('copy:js', function() {
 	return gulp.src(['./source/js/jquery-3.0.0.min.js', './source/js/jquery-migrate-1.4.1.min.js'])
 		.pipe(gulp.dest('build/js'));
+			gulp.src('./source/js/components/slick.js')
+		.pipe(gulp.dest('build/js/components'));
+});
+
+gulp.task('copy:js_components', function() {
+	return gulp.src('./source/js/components/slick.js')
+		.pipe(gulp.dest('build/js/components'));
 });
 
 // Copy
-gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images', 'copy:index', 'copy:js'));
+gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images', 'copy:index', 'copy:js', 'copy:js_components'));
 
 //Watchers
 gulp.task('watch', function() {

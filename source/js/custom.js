@@ -5,6 +5,10 @@ $(window).load(function(){
 		$('body').addClass('web');
 	};
 	$('body').removeClass('loaded'); 
+
+	// Slider
+
+	$('.slider').slick();
 });
 /* viewport width */
 function viewport(){
