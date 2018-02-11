@@ -1,11 +1,11 @@
 /* reset */
 $min-width: 320px; 
-$max-width: 1200px; 
+$max-width: 1244px; 
 $base-bg: #FFF; 
-$base-font-size: 13px; 
+$base-font-size: 14px; 
 $base-line-height: 18px; 
-$base-font-family: Arial, sans-serif; 
-$custom-font-family: 'Open Sans', sans-serif; 
+$base-font-family:'PTSans', sans-serif; 
+$custom-font-family: 'PTSansBold', sans-serif; 
 $link-color: #100da9;
 $default-transition:all 0.2s linear;
 
@@ -22,3 +22,6 @@ $font-size-h2: 32px;
 $line-height-h2: 37px;
 $font-size-h3: 28px;
 $line-height-h3: 32px;
+
+//slider
+$slider-caption-bg: #cb944c;

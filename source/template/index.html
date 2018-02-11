@@ -18,7 +18,7 @@
 
 	<main class="content">		
 		<div class="wrapper">
-				привет
+				
 		</div>		
 	</main>	
 			
@@ -26,52 +26,88 @@
 
 <!-- BEGIN HEADER -->
 
-	<header>		
+	<header class="header">		
 		<div class="wrapper">
 			<div class="header-top">
-				<div class="header__logo">
-					<a href="#"><img src="img/logo.png" alt="BlagoyArt"></a>
-					<span class="header__tagline">Интернет-магазин «Благой арт»</span>
+				<div class="logo">
+					<a class="logo__link" href="#"><img class="logo__picture" src="img/logo.png" alt="BlagoyArt"></a>
+					<span class="logo__tagline">Интернет-магазин «Благой арт»</span>
 				</div>
 			
-				<form class="header__search" action="search.html" method="GET">
-					<input type="text" name="search" placeholder="Введите название или артикул">
+				<form class="search" action="search.html" method="GET">
+					<input class="search__input" type="text" name="search" placeholder="Введите название или артикул">
+					<input type="submit" class="search__submit" value=""></input>
 				</form>
-				<div class="header__phone">
-					+7 (800) 707-81-39
-				</div>
-				<div class="worktime">
-					<p class="worktime__time">ПН-ПТ с 9:00 до 18:00</p>
-					<a class="worktime__delivery">Доставка по РФ и СНГ</a>
+				<div class="contacts">
+					<div class="header__phone">
+						+7 (800) 707-81-39
+					</div>
+					<div class="worktime">
+						<p class="worktime__time">ПН-ПТ с 9:00 до 18:00</p>
+						<a href="#" class="worktime__delivery">Доставка по РФ и СНГ</a>
+					</div>
 				</div>
 				
 			</div>
 			<div class="header-bottom">
 				<nav class="nav-top">
 					<ul class="nav-top__list">
-						<li class="nav-top__item"><a href="#">КАТАЛОГ ТОВАРОВ</a></li>
+						<li class="nav-top__item"><a class="nav-top__item--drop" href="#">КАТАЛОГ ТОВАРОВ</a>
+							<ul class="menu-catalog__list">
+								<li class="menu-catalog__item"><a href="#">Свадебная бижутерия</a></li>
+								<li class="menu-catalog__item"><a href="#">Аксессуары для волос</a></li>
+								<li class="menu-catalog__item"><a href="#">Броши</a></li>
+								<li class="menu-catalog__item"><a href="#">Мужские аксессуары</a>
+									<ul class="menu-product__list">
+										<li class="menu-product__item">МУЖСКАЯ БИЖУТЕРИЯ</li>
+										<li class="menu-product__item"><a href="#">Браслеты</a></li>
+										<li class="menu-product__item"><a href="#">Кулоны</a></li>
+										<li class="menu-product__item"><a href="#">Зажимы и запонки</a></li>
+									</ul>
+								</li>
+								<li class="menu-catalog__item"><a href="">Клатчи</a></li>
+								<li class="menu-catalog__item"><a href="">Детская бижутерия</a></li>
+								<li class="menu-catalog__item"><a href="">Демонстрационное оборудование</a></li>
+							</ul>
+						</li>
 						<li class="nav-top__item"><a href="#">УСЛОВИЯ РАБОТЫ</a></li>
 						<li class="nav-top__item"><a href="#">СКИДКИ</a></li>
-						<li class="nav-top__item"><a href="#">ОПЛАТА И ДОСТАВКА</a></li>
+						<li class="nav-top__item"><a href="#">Оплата И ДОСТАВКА</a></li>
 						<li class="nav-top__item"><a href="#">ДОКУМЕНТЫ</a></li>
 						<li class="nav-top__item"><a href="#">КОНТАКТЫ</a></li>
 					</ul>
 				</nav>
-				<div class="basket">
-					<div class="basket__munber">10</div>
-					ТОВАРОВ / 
-					<div class="basket__prise"> 56789 </div>
-					p
-				</div>
-				<div class="enter">
-					<a href="#">Войти</a>
+				<div class="header-bottom__basket">
+					<div class="basket">
+						<span class="basket__number">10</span>
+						ТОВАРОВ / 
+						<span class="basket__prise"> 56789 </span>
+						p
+					</div>
+					<div class="enter">
+						<a class="enter__link" href="#">Войти</a>
+					</div>
 				</div>
 			</div>
 		</div>		
 		<div class="slider">
-			<div class="slider__item">
-				<img src="img/slide/slide1.jpg" class="slider__picture"></img>
-				<div class="slide__caption">Новая коллекция SWAROVSKI уже здесь!</div>
+			<div>
+				<div class="slider__item">
+					<img src="img/slide/slide1.jpg" class="slider__picture"></img>
+					<div class="slider__caption">Новая коллекция SWAROVSKI уже здесь!</div>
+				</div>
+			</div>
+			<div>
+				<div class="slider__item">
+					<img src="img/slide/slide1.jpg" class="slider__picture"></img>
+					<div class="slider__caption">Новая коллекция SWAROVSKI уже там!</div>
+				</div>
+			</div>
+			<div>
+				<div class="slider__item">
+					<img src="img/slide/slide1.jpg" class="slider__picture"></img>
+					<div class="slider__caption">Новая коллекция SWAROVSKI уже везде!</div>
+				</div>
 			</div>
 		</div>
 	</header>

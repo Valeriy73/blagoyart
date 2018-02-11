@@ -8,7 +8,13 @@ $(window).load(function(){
 
 	// Slider
 
-	$('.slider').slick();
+	$('.slider').slick({
+		dots: true,
+		prevArrow: '<button type="button" class="slick-prev"><div class="slick-prev__img"></div></button>',
+		nextArrow: '<button type="button" class="slick-next"><div class="slick-next__img"></div></button>',
+
+
+	});
 });
 /* viewport width */
 function viewport(){
