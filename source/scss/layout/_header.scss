@@ -89,40 +89,6 @@
 	}
 }
 
-.nav-top {
-	width: 67%;
-	padding: 0 15px;
-	&__list {
-		display: flex;
-		justify-content: space-between;
-		list-style: none;
-		&::before {
-			content: "";
-			display: inline-block;
-			vertical-align: top;
-			@include sprite($hamburger);
-			margin-top: 2px;
-		}
-	}
-	&__item {
-		a {
-			text-transform: uppercase;
-			font-family: $custom-font-family;
-			font-size: 16px;
-			color: #171717;
-		}
-		&--drop {
-			&::after {
-				content: "";
-				display: inline-block;
-				vertical-align: middle;
-				margin-left: 10px;
-				@include sprite($arrow-down);
-				margin-top: -5px;
-			}
-		}
-	}
-}
 .basket {
 	display: inline-block;
 	margin-right: 20px;
