@@ -16,7 +16,7 @@ $slick-dot-color-active:  $slick-dot-color !default;
 $slick-prev-character: "" !default;
 $slick-next-character: "" !default;
 $slick-dot-character: "\2022" !default;
-$slick-dot-size: 56px !default;
+$slick-dot-size: 72px !default;
 $slick-opacity-default: 1 !default;
 $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: 0.33 !default;
@@ -136,7 +136,7 @@ $slick-opacity-not-active: 0.33 !default;
 
 .slick-dots {
     position: absolute;
-    bottom: -55px;
+    bottom: -65px;
     list-style: none;
     display: block;
     text-align: center;
@@ -148,7 +148,7 @@ $slick-opacity-not-active: 0.33 !default;
         display: inline-block;
         height: 20px;
         width: 20px;
-        margin: 0 5px;
+        margin: 0 10px;
         padding: 0;
         cursor: pointer;
         button {
