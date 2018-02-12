@@ -15,10 +15,11 @@
 		}
 	}
 	&__item {
+		text-transform: uppercase;
+		font-family: $custom-font-family;
+		font-size: 16px;
+		color: #171717;
 		a {
-			text-transform: uppercase;
-			font-family: $custom-font-family;
-			font-size: 16px;
 			color: #171717;
 			display: inline-block;		
 		}
@@ -26,14 +27,8 @@
 			display: none;
 		}
 		input[type=checkbox]:checked + label + .menu-catalog__list {
-				display: block;
+				display: none;
 			}
-		
-		/* &:hover {
-			.menu-catalog__list {
-				display: block;
-			}
-		} */
 		&--drop {
 			display: inline-block;
 			cursor: pointer;
@@ -43,7 +38,7 @@
 				vertical-align: middle;
 				margin-left: 10px;
 				@include sprite($arrow-down);
-				margin-top: -5px;
+				margin-top: -3px;
 			}
 		}
 		
@@ -52,7 +47,7 @@
 
 .menu-catalog {
 	&__list {
-		display: none;
+		//display: none;
 		border: 1px solid #dddfdf;
 		border-radius: 3px;
 		background-color: #fff;
@@ -63,48 +58,82 @@
 		z-index: 999;
 		text-align: left;
 		width: 244px;
-		padding: 0;
-
+		padding: 20px 0;
+		list-style: none;
 	}
 	&__item {
+		position: relative;
 		a {
 			color: #666666;
 			font-size: 15px;
-			line-height: 2;
+			line-height: 1;
 			font-family: $base-font-family;
 			text-transform: none;
-			display: block;
+			display: inline-block;
 			width: 100%;
-			padding: 2px 0;
-			position: relative;
 			padding: 0 60px 0 35px;
+			&:before {
+				content: "\25E6";
+				color: $slider-caption-bg;
+				font-size: 24px;
+				margin-left: -20px;
+				padding-right: 10px;
+				line-height: 1.5;
+				vertical-align: -4%;
+			}
 
 			&:hover {
 				background-color: #e9e9ea;
+				.menu-product__list {
+					display: block;
+				}
 			}
+		}
 
+		&:hover {
+			.menu-product {
+				display: block;
+			}
+		}
+
+		&--arrow-right:after {
+			content: "";
+			@include sprite($arrow-down);
+			display: inline-block;
+			transform: rotate(-90deg) translateX(3px);
+			position: absolute;
+			right: 15px;
+			top: 50%;
 		}
 	}
 }
 
 .menu-product {
+	padding-left: 2px;
+	background-color: transparent;
+	display: none;
+	position: absolute;
+	left: 100%;
+	top: -8px;
 	&__list {
+		
 		border: 1px solid #dddfdf;
 		border-radius: 3px;
 		background-color: #fff;
 		box-shadow: 1.5px 2.598px 1px 0px rgba(108, 104, 104, 0.33);
-		position: absolute;
-		left: 101%;
-		top: 0;
-		width: 242px;
-		//list-style-type: circle;
-		color: #cb944c;
-		margin-left: -20px;
+		
+		width: 242px;		
+		list-style: none;
+		padding: 10px 0;
+		
 	}
 	&__item {
-		list-style-type: circle;
 		&:first-child {
-			padding-left: 15px;
+			padding: 10px 0 10px 15px;
+			color: #cb944c;
+			text-transform: uppercase;
+			font-family: "PTSansBold";
+
 		}
 	}
 
