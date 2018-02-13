@@ -138,4 +138,13 @@
 
 }
 
-
+@media screen and (max-width: 767px) {
+	.nav-top {
+		width: 100%;
+		order: 1;
+		margin-top: 26px;
+		&__item {			
+			font-size: 13px;
+		}
+	}
+}

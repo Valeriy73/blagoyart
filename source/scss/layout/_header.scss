@@ -158,5 +158,96 @@
 }
 
 @media screen and (max-width: 767px) {
+	.header-top {
+		margin-bottom: 30px;
+	}
+	.logo {
+		flex-basis: 180px;
+		&__tagline {
+			font-size: 12.7px;
+		}
+	}
+	.search {
+		height: 30px;
+		margin-left: 0;
+		margin-right: 0;
+		&__input {
+		    width: 90%;
+		    height: 28px;
+		    font-size: 10px;
+		}
+		&__submit {
+			transform: scale(0.8, 0.8);
+		}
+	}
+	.header__phone {
+		font-size: 15px;
+
+	}
+	.worktime {
+		font-size: 10px;
+
+		&__time {
+			font-size: 10px;
+			line-height: 1;
+		}
+	}
 	
+	.basket {
+		display: inline-block;
+		margin-right: 5px;
+		font-size: 10px;
+
+		&:before {
+			content: "";
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 5px;
+			@include sprite($basket);
+			transform: scale(0.8, 0.8);
+		}
+
+		&__number {
+			background-color: #cb944c;
+			border-radius: 50%;
+			padding: 2px 3px;
+			color: #fff;
+			margin-right: 5px;
+			font-size: 13px;
+			
+		}
+
+		&__prise {
+			font-size: 13px;
+		}
+	}
+
+	.enter {
+		display: inline-block;
+		vertical-align: middle;
+		&:before {
+			content: "";
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 3px;
+			@include sprite($enter);
+			transform: scale(0.8, 0.8);
+		}
+		&__link {
+			text-transform: uppercase;
+			font-size: 13px;
+			font-family: $custom-font-family;
+			color: #252a54;
+		}
+	}
+	
+	.header-bottom {
+		flex-direction: column;
+		margin-bottom: 20px;
+		&__basket {
+			width: 100%;
+			order: 0;
+			margin-top: -45px;
+		}
+	}
 }
