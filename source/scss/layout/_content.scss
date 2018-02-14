@@ -109,7 +109,10 @@ h3{
 }
 
 @media screen and (max-width: 767px) {
-	
+	.main-wrapper {
+		padding-left: 13px;
+		padding-right: 13px;
+	}
 }
 
 
