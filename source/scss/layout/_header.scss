@@ -169,10 +169,10 @@
 	}
 	.search {
 		height: 30px;
-		margin-left: 0;
-		margin-right: 0;
+		margin-left: 4.2%;
+		margin-right: 4.4%;
 		&__input {
-		    width: 90%;
+		    width: 89%;
 		    height: 28px;
 		    font-size: 10px;
 		}
@@ -182,6 +182,7 @@
 	}
 	.header__phone {
 		font-size: 15px;
+		margin-right: 15px;
 
 	}
 	.worktime {
@@ -195,22 +196,22 @@
 	
 	.basket {
 		display: inline-block;
-		margin-right: 5px;
+		margin-right: 10px;
 		font-size: 10px;
 
 		&:before {
 			content: "";
 			display: inline-block;
 			vertical-align: middle;
-			margin-right: 5px;
+			margin-right: 0;
 			@include sprite($basket);
-			transform: scale(0.8, 0.8);
+			transform: scale(0.6, 0.6);
 		}
 
 		&__number {
 			background-color: #cb944c;
 			border-radius: 50%;
-			padding: 2px 3px;
+			padding: 0 3px;
 			color: #fff;
 			margin-right: 5px;
 			font-size: 13px;
