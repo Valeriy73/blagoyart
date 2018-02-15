@@ -41,7 +41,6 @@
 
 
 .logo {
-	margin-right: 10px;
 	&__link {
 		display: block;
 	}
@@ -57,22 +56,25 @@
 		text-align: left;
 	}
 }
-
 .search {
 	flex-grow: 1;
-	//width: 494px;
-	border: 1px solid #b9b8bd;
-	border-radius: 4px;
-	height: 38px;
-	margin-left: 2.5%;
-    margin-right: 7%;
+	&__form {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 494px;
+		border: 1px solid #b9b8bd;
+		border-radius: 4px;
+		height: 38px;
+		margin-left: 30px;
+	}
 	
 	&__input {
-		width: 94%;
 		height: 36px;
 		border: none;
 		padding-left: 8px;
 		margin-left: 2px;
+		flex-grow: 1;
 	}
 
 	&__submit {
@@ -81,11 +83,17 @@
 		background-color: #fff;
 		padding: 0;
 		border: none;
+		margin-right: 10px;
 	}
 }
 
+.contacts {
+	display: flex;
+	flex-wrap: nowrap;
+	margin-left: 15px;
+	justify-content: space-between;
+}
 .worktime {
-	display: inline-block;
 	&__time {
 		color: #cb944c;
 		padding: 0;
@@ -142,7 +150,11 @@
 
 
 @media screen and (max-width: 1200px) {
-	
+	.search {
+		&__input {
+			
+		}
+	}
 }
 
 @media screen and (min-width: 992px){
@@ -154,7 +166,25 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-	
+	.logo {
+		max-width: 200px;
+		width: 100%;
+	}
+	/* .search {
+		margin-right: 4.4%;
+	}
+	.contacts {
+		flex-basis: 280px;
+	} */
+	.header__phone {
+		font-size: 18px;
+	}
+	.worktime__time {
+		font-size: 12px;
+	}
+	.worktime__delivery {
+		font-size: 12px;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -169,8 +199,6 @@
 	}
 	.search {
 		height: 30px;
-		margin-left: 4.2%;
-		margin-right: 4.4%;
 		&__input {
 		    width: 89%;
 		    height: 28px;
