@@ -66,7 +66,7 @@
 		border: 1px solid #b9b8bd;
 		border-radius: 4px;
 		height: 38px;
-		margin-left: 30px;
+		margin-left: 7%;
 	}
 	
 	&__input {
@@ -170,12 +170,13 @@
 		max-width: 200px;
 		width: 100%;
 	}
-	/* .search {
-		margin-right: 4.4%;
+	.search__input {
+		font-size: 12px;
 	}
-	.contacts {
-		flex-basis: 280px;
-	} */
+	.search__submit {
+		transform: scale(0.8, 0.8);
+		margin-right: 4px;
+	}
 	.header__phone {
 		font-size: 18px;
 	}
@@ -198,14 +199,19 @@
 		}
 	}
 	.search {
-		height: 30px;
+		&__form {
+			height: 30px;
+			margin-left: 15%;
+			max-width: 220px;
+		}
 		&__input {
-		    width: 89%;
 		    height: 28px;
 		    font-size: 10px;
+
 		}
 		&__submit {
-			transform: scale(0.8, 0.8);
+			transform: scale(0.7, 0.7);
+			margin-right: 3px;
 		}
 	}
 	.header__phone {
@@ -278,5 +284,8 @@
 			order: 0;
 			margin-top: -45px;
 		}
+	}
+	.nav-top {
+	    margin-top: 23px;
 	}
 }
